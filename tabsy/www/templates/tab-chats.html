@@ -1,0 +1,32 @@
+<ion-view view-title="Chats">
+  <ion-content >
+    <!--<ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()"></ion-refresher>-->
+
+    <ion-slide-box on-slide-changed="slideHasChanged($index)">
+      <ion-slide>
+        <div class="box blue"> <ion-list>
+          <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" ng-click="goDetails()">
+          <!--href="#/tab/chats/{{chat.id}}-->
+          <img ng-src="{{chat.thumbnail_pic_s}}">
+          <h2>{{chat.type}}</h2>
+          <p>{{chat.title}}</p>
+          <i class="icon ion-chevron-right icon-accessory"></i>
+
+          <!--<ion-option-button class="button-assertive" ng-click="remove(chat)">-->
+          <!--Delete-->
+          <!--</ion-option-button>-->
+          </ion-item>
+        </ion-list></div>
+      </ion-slide>
+      <ion-slide >
+        <div class="box yellow" ><div style="width: 500px;height: 600px">asdf</div></div>
+      </ion-slide>
+      <ion-slide >
+        <div class="box pink"  ><div style="width: 500px;height: 600px">asdsdff</div></div>
+      </ion-slide>
+    </ion-slide-box>
+
+  </ion-content>
+</ion-view>
+
+

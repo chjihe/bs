@@ -1,0 +1,155 @@
+/* Empty. Add your own CSS if you like */
+a{ text-decoration:none}
+body, .ionic-body{font-family: 微软雅黑, Arial, Helvetica, sans-serif;}
+
+.bar .sub_header_list .button.button-clear{
+
+  border-bottom: 1px solid #eee;
+}
+.sub_header_list .button{
+  width: 50%;
+  color:#666;
+}
+.bar .sub_header_list .button.sub_button_select{
+  border-bottom:2px solid #387ef5;
+  position:relative;
+}
+.bar-subheader{
+  border-bottom: none;
+}
+.red{
+  color:red;
+}
+
+.comm button{height:32px !important;width:100%;font-size:12px !important;color:#1DACE3 !important;}
+.subheader_r_icon{
+  position: absolute;
+  right: 0px;
+  width: 26px;
+  height: 36px;
+  line-height: 38px;
+  top: 0px;
+  text-align: center;
+  background: #fff;
+  color:#666;
+}
+.sub_header_catgorylist .button{
+  width: 25%;
+  color:#8f8f8f;
+}
+.sub_header_catgorylist .activebutton{
+  color:#ff3b30;
+  padding:0 16px;
+}
+/********************************类别样式***************************************************/
+.category-content .category_title{
+
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #666;
+  padding-left: 3.4%;
+  padding-right: 3.4%;
+  background: #eee;
+}
+
+.category-content .category_title .button{
+
+  min-height: 20px;
+  line-height: 20px;
+
+}
+.category-content .category_list ul li{
+  height: 36px;
+  line-height: 36px;
+  border-color: #b2b2b2;
+  background-color: #f8f8f8;
+  color: #444;
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 6px;
+  vertical-align: top;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  cursor: pointer;
+  width: 20%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 3.4%;
+  position: relative;
+}
+.category-content .category_list ul li a{
+  text-decoration:none;
+  color: #444;
+}
+.category-content .category_list ul li .close{
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  border-radius: 12px;
+  color: #fff;
+  background: #222222;
+  font-size: 12px;
+}
+
+.category-content .category_list .ion_list_no_rorder ion-item{
+  height: 36px;
+  line-height: 36px;
+  border-color: #b2b2b2;
+  background-color: #f8f8f8;
+  color: #444;
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 6px;
+  vertical-align: top;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  cursor: pointer;
+  width: 20%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 3.4%;
+  position: relative;
+}
+.category-content .category_list .ion_list_no_rorder ion-item a{
+  text-decoration:none;
+  color: #444;
+}
+
+
+.category-content .category_list .ion_list_no_rorder ion-item .close{
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  border-radius: 12px;
+  color: #fff;
+  background: #222222;
+  font-size: 12px;
+
+}
+.ion_list_no_rorder .item-complex .item-content,.ion_list_no_rorder .item-radio .item-content{
+  padding: 0px;
+}
+
+.float_icon{
+  position:absolute;
+  width:16px;
+  height: 16px;
+  border: 0px solid #6b46e5;
+  float:right;
+  z-index:100;
+  right:0;/*   定位到右上   */
+  top:0;
+
+}
+
+/********************************类别样式***************************************************/

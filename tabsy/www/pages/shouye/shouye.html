@@ -1,0 +1,18 @@
+<ion-view title="新闻资讯">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <div class="bar bar-subheader">
+    <ion-scroll direction="x"  scrollbar-x="false"  delegate-handle="s_header"  style="width: 100%;margin-right: 5px;">
+      <div class="button-bar sub_header_catgorylist" id="sub_header_list"  style="width:{{ProductListData.length}}">
+        <a ng-repeat="r in ProductListData" ng-click="changeTab(r.id)"  id="but_{{r.id}}"  class="button button-clear">{{r.title}}</a>
+      </div>
+    </ion-scroll>
+    <div class="ion-plus subheader_r_icon" ng-click="openCategoryModal($event);"></div>
+  </div>
+  <ion-content class="has-subheader">
+    <div>
+      <h1>{{subTitle}}</h1>
+    </div>
+  </ion-content>
+</ion-view>

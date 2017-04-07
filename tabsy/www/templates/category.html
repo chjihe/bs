@@ -1,0 +1,38 @@
+<div class="modal">
+  <ion-header-bar class="bar-positive ">
+    <h1 class="title">我的频道</h1>
+    <div class="buttons">
+      <i class="icon ion-ios-close-empty" ng-click="closeCategoryModal()"
+         style="width: 36px; height: 36px; line-height: 36px; text-align: center; font-size: 34px;" />
+    </div>
+  </ion-header-bar>
+  <ion-content class="category-content has-header">
+
+    <div class="category_title">
+      我的频道
+      <span ng-if="!is_close">(点击删除频道)</span>
+    </div>
+    <div class="category_list">
+      <ion-list ng-class="{'ion_list_no_rorder':!is_close}"   >
+        <div ng-if="!is_close">
+          <ion-item ng-repeat="(key,cate) in ProductListData"  on-tap="cateChangeTab(cate.id,key)" >
+            {{cate.title}}
+            <div class="float_icon" ng-click="deltab(cate.id)"></div>
+            <ion-delete-button class="ion-minus-circled" ></ion-delete-button>
+            <ion-reorder-button class="ion-navicon" on-reorder="move_item(item,$fromIndex,$toIndex)"></ion-reorder-button>
+          </ion-item>
+        </div>
+      </ion-list>
+    </div>
+    <div ng-if="!is_close" class="category_title">
+      点击添加到我的频道
+    </div>
+    <div ng-if="!is_close" class="category_list">
+      <ul>
+        <li ng-repeat="(key,cate) in categoryListOtherData"  on-tap="addtab(cate.id)">
+          <a href="javascript:void(0);">{{cate.title}}</a>
+        </li>
+      </ul>
+    </div>
+  </ion-content>
+</div>

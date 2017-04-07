@@ -1,0 +1,56 @@
+<ion-view view-title="登录" hide-nav-bar="true" style="background-color: #fbfffb">
+  <div class="bar  padding">
+    <a class="button button-light icon ion-ios-arrow-left" href="#/shouye"></a>
+    <h1 class="title">登入网易新闻</h1>
+  </div>
+  <div class="bar  bar-subheader light-bg">
+  </div>
+  <ion-content class="light-bg has-subheader"scroll="false">
+    <div class="list list-inset">
+      <label class="item item-input">
+        <span class="input-lable">帐号</span>
+        <input type="text" style="margin-left: 10px" placeholder="手机号或者电子邮箱" ng-model="loginData.username">
+      </label>
+      <label class="item item-input" style="margin-top:20px">
+        <span class="input-lable">密码</span>
+        <input type="password" style="margin-left: 10px" placeholder="登录密码" ng-model="loginData.password">
+        <a class="button button-clear button-small button-dark" href="#/forgotpassword">忘记密码？</a>
+      </label>
+    </div>
+
+    <div class="row">
+      <div class="col  padding-right">
+        <button class="button button-light button-block" ng-click="login()">登录</button>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col padding-left">
+       <span>还可以选择以下方式登录</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-33">
+        <a><img class="full-image "src="pages/welcome/img/wxdl.png"></a>
+      </div>
+      <div class="col col-33">
+        <a><img class="full-image "src="pages/welcome/img/wbdl.png"></a>
+      </div>
+      <div class="col col-33">
+        <a><img class="full-image "src="pages/welcome/img/qqdl.png"></a>
+      </div>
+    </div>
+
+  </ion-content>
+  <div class="bar bar-footer padding " >
+    <div class="row">
+      <div class="col col-33 col-offset-33 text-center">
+        <a class="button button-light ">没有帐号</a>
+      </div>
+      <div class="col col-33 text-center">
+        <a class="button button-light item-button-right">手机号快速注册</a>
+      </div>
+
+
+  </div>
+</ion-view>
